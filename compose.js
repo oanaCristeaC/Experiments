@@ -13,6 +13,11 @@ const customer = {
   /** Use reduce to apply  compose to all given functions */
   const purchasesItems = (...fn) => fn.reduce(compose)
   
+  /*
+  const compose = (f, g)  => f(g);
+  const purchasesItems = (...fn) => fn.reduce(compose)
+  */
+  
   /** Use concat to do not mutate the state of the user cart, but to create new object instead
    * Use Object.assign to make a copy of the customer object (called user) with updated cart value
   */
